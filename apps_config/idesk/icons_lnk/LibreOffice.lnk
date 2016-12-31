@@ -1,0 +1,9 @@
+table Icon
+  Caption: LibreOffice
+  Icon: ~/icons_png/book_64.png
+  X: 177
+  Y: 317
+  Command[0]: libreoffice
+  Command[1]: idesktool LibreOffice.lnk
+end
+

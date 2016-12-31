@@ -1,0 +1,9 @@
+[
+	{ "keys": ["ctrl+m"], "command": "toggle_menu"},
+	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+l"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["ctrl+left"], "command": "expand_selection", "args": {"to": "word"} },
+
+	{ "keys": ["ctrl+up"], "command": "swap_line_up" },
+	{ "keys": ["ctrl+down"], "command": "swap_line_down" }
+]

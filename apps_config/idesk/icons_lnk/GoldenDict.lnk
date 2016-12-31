@@ -1,0 +1,9 @@
+table Icon
+  Caption: GoldenDict
+  Icon: ~/icons_png/dictionary_64.png
+  X: 177
+  Y: 67
+  Command[0]: goldendict
+  Command[1]: idesktool GoldenDict.lnk
+end
+

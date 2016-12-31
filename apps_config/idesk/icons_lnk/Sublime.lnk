@@ -1,0 +1,9 @@
+table Icon
+  Caption: Sublime
+  Icon: ~/icons_png/copy_64.png
+  X: 37
+  Y: 317
+  Command[0]: subl3
+  Command[1]: idesktool Sublime.lnk
+end
+

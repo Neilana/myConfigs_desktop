@@ -1,0 +1,43 @@
+! File: ~/.Xresources 585458
+
+! Terminal colors
+
+XTerm*faceName: Bitstream Vera Serif Mono
+xterm*faceSize: 10
+
+! special
+*.foreground:   #C3BEBD
+*.background:   #585458
+*.cursorColor:  #C3BEBD
+
+! black
+*.color0:       #6A676A
+*.color8:       #888888
+
+! red
+*.color1:       #aa9988
+*.color9:       #aa9988
+
+! green
+*.color2:       #89ab9a
+*.color10:      #89ab9a
+
+! yellow
+*.color3:       #ffffdd
+*.color11:      #ffffdd
+
+! blue
+*.color4:       #899aab
+*.color12:      #899aab
+
+! magenta
+*.color5:       #9a89ab
+*.color13:      #9a89ab
+
+! cyan
+*.color6:       #ffc178
+*.color14:      #ffc178
+
+! white
+*.color7:       #dddddd
+*.color15:      #cccccc

@@ -1,0 +1,9 @@
+table Icon
+  Caption: My files (1)
+  Icon: ~/icons_png/folder_64.png
+  X: 37
+  Y: 197
+  Command[0]: thunar /mnt/hdd_fat/'Мои файлы'
+  Command[1]: idesktool MyFiles.lnk
+end
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+FREE_SPACE=$(df -h ~ | grep / | awk '{ print $4 }' )
+
+echo "<span color='#C3BEBD'>$FREE_SPACE</span>"
