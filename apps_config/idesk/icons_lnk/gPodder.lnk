@@ -1,6 +1,6 @@
 table Icon
   Caption: gPodder
-  Icon: ~/icons_png/radio_64.png
+  Icon: /usr/share/idesk/icons/myIcons/radio_64.png
   X: 177
   Y: 437
   Command[0]: gpodder

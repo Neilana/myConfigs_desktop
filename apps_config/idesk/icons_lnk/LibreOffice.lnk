@@ -1,6 +1,6 @@
 table Icon
   Caption: LibreOffice
-  Icon: ~/icons_png/book_64.png
+  Icon: /usr/share/idesk/icons/myIcons/book_64.png
   X: 177
   Y: 317
   Command[0]: libreoffice

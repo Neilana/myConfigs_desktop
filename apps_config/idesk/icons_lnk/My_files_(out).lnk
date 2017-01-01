@@ -1,6 +1,6 @@
 table Icon
   Caption: My files (1)
-  Icon: ~/icons_png/folder_64.png
+  Icon: /usr/share/idesk/icons/myIcons/folder_64.png
   X: 37
   Y: 197
   Command[0]: thunar /mnt/hdd_fat/'Мои файлы'

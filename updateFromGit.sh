@@ -11,7 +11,7 @@ cp startup_config/.xinitrc ~/
 
 # 3. idesk
 cp apps_config/idesk/.ideskrc ~/.ideskrc 
-cp apps_config/idesk/icons_png/* ~/icons_png/
+cp apps_config/idesk/icons_png/* /usr/share/idesk/icons/myIcons/
 cp apps_config/idesk/icons_lnk/* ~/.idesktop/
 
 # 4. Apps configs

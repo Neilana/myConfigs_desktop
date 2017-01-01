@@ -14,7 +14,7 @@ cp ~/.xinitrc startup_config/
 
 # 3. idesk
 cp ~/.ideskrc apps_config/idesk
-cp ~/icons_png/* apps_config/idesk/icons_png
+cp /usr/share/idesk/icons/myIcons/* apps_config/idesk/icons_png
 cp ~/.idesktop/* apps_config/idesk/icons_lnk
 
 # 4. Color schemes (themes)

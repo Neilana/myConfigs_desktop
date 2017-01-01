@@ -1,9 +1,8 @@
 table Icon
   Caption: Clementine
-  Icon: ~/icons_png/music-player_64.png
+  Icon: /usr/share/idesk/icons/myIcons/music-player_64.png
   X: 37
   Y: 437
   Command[0]: clementine
   Command[1]: idesktool Clementine.lnk
 end
-

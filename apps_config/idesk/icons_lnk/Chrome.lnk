@@ -1,9 +1,8 @@
 table Icon
   Caption: Chrome
-  Icon: ~/icons_png/chrome_64.png
+  Icon: /usr/share/idesk/icons/myIcons/chrome_64.png
   X: 37
   Y: 67
   Command[0]: chromium
   Command[1]: idesktool Chrome.lnk
 end
-

@@ -1,9 +1,9 @@
 table Icon
   Caption: My files (3)
-  Icon: ~/icons_png/folder_64.png
+  Icon: /usr/share/idesk/icons/myIcons/folder_64.png
   X: 177
   Y: 197
-  Command[0]: thunar ~/MyFiles
+  Command[0]: thunar /home/neilana/MyFiles
   Command[1]: idesktool MyFiles.lnk
 end
 
