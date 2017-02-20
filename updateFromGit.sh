@@ -8,6 +8,8 @@ cp i3_config/i3blocks/myBlocks/* /usr/lib/i3blocks/myBlocks/
 
 # 2. Startup configs
 cp startup_config/.xinitrc ~/
+cp startup_config/.bashrc ~/
+
 
 # 3. idesk
 cp apps_config/idesk/.ideskrc ~/.ideskrc 
@@ -28,3 +30,4 @@ cp apps_config/sublime3/Preferences* ~/.config/sublime-text-3/Packages/User/
 
 # ranger theme
 cp ~/.config/ranger/colorschemes/MyTheme.py apps_config/ranger
+

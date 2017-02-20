@@ -30,3 +30,6 @@ cp ~/.config/sublime-text-3/Packages/User/Preferences* apps_config/sublime3/
 
 # ranger theme
 cp ~/.config/ranger/colorschemes/MyTheme.py apps_config/ranger/
+
+# bashrc
+cp ~/.bashrc startup_config/.bashrc
