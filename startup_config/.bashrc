@@ -10,6 +10,7 @@ eval "$(dircolors ~/.dir_colors)"
 alias ls='ls --color=auto'
 
 alias wcnt="cd ~/Dropbox/repos/wordscounter/"
+alias tatom="cd /home/neilana/Dropbox/programs/cpp/technoatom_cpp/"
 
 source ~/git/contrib/completion/git-prompt.sh
 
