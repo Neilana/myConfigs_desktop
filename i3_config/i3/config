@@ -39,6 +39,12 @@ bindsym $mod+Shift+s exec --no-startup-id subl3
 bindsym $mod+Shift+f exec --no-startup-id thunar
 
 
+#Fn
+bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer set Master 3%+ unmute && pkill -RTMIN+10 i3blocks"
+bindsym XF86AudioLowerVolume exec --no-startup-id "amixer set Master 3%- unmute && pkill -RTMIN+10 i3blocks"
+bindsym XF86AudioMute exec --no-startup-id "amixer set Master toggle && pkill -RTMIN+10 i3blocks"
+
+
 # Caps Lock
 bindsym --release Caps_Lock exec --no-startup-id pkill -SIGRTMIN+11 i3blocks
 
@@ -218,8 +224,8 @@ bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -fn Cantr
 # start dmenu (a program launcher)
 bindsym $mod+Shift+d exec --no-startup-id dmenu_run -fn Cantrall -nb "$bg-color" -nf "$inactive-text-color" -sf "$text-color" -sb "$border-color" -h 60
 
-#bindsym $mod+Shift+Pause exec i3lock -i ~/.config/i3/wallpaper_lock.png && systemctl suspend
-bindsym $mod+Pause exec --no-startup-id systemctl suspend
+bindsym $mod+Pause exec --no-startup-id i3lock -i ~/.config/i3/wallpaper_lock.png && systemctl suspend
+#bindsym $mod+Pause exec --no-startup-id systemctl suspend
 
 # window colors
 #                       border              background         text                 indicator
@@ -228,11 +234,15 @@ client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-co
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator-color
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator-color
 
-
+# floating windows
 # my QT program
 for_window [class="wordscounter_project" instance="wordscounter_project"] floating enable
 
-
+# tewmviewer
+for_window [class="TeamViewer" instance="TeamViewer"] floating enable
+for_window [title="TeamViewer Panel (minimized)"] floating enable, move absolute position 1000 px 0 px
+for_window [title="TeamViewer Panel"] floating enable, move absolute position 1000 px 0 px
+for_window [class="i3-frame" instance="i3-frame"] floating enable
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

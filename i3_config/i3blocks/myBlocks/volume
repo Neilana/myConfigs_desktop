@@ -9,20 +9,18 @@ case $BLOCK_BUTTON in
   5) amixer -q set Master ${STEP}- unmute ;; # scroll down, decrease
 esac
 
-VALUE=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master))
-#MUTE=$(awk -F"[][]" '/dB/ { print $6 }' <(amixer sget Master))
+VALUE=$(awk -F"[][]" '/Front Left:/ { sub(/%/,""); print $2 }' <(amixer sget Master))
+MUTE=$(awk -F"[][]" '/Front Left:/ { sub(/%/,""); print $4 }' <(amixer sget Master))
 IMAGE=""
 
 # mute
 #if [[ $MUTE = "off" || $VALUE = "0%" ]]; then
-if [[ $VALUE = "0%" ]]; then
+COLOR1="#888888"
+COLOR2="#C3BEBD"
+if [[ $VALUE = "0" ]]; then
   IMAGE=""
-  COLOR1="#7D6F67"
   COLOR2="#7D6F67"
 # not mute
-else
-  COLOR1="#FFD29E"
-  COLOR2="#EBD1B7"
 fi
 
-echo "<span color='$COLOR1'>$IMAGE</span> <span color='$COLOR2'>$VALUE</span>"
+echo "<span color='$COLOR1'>$IMAGE</span> <span color='$COLOR2'>$VALUE%</span>"
